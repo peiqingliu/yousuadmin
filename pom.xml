@@ -4,21 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>me.zhengjie</groupId>
-    <artifactId>eladmin</artifactId>
+    <groupId>com.yousushare</groupId>
+    <artifactId>yousuadmin</artifactId>
     <packaging>pom</packaging>
     <version>2.4</version>
 
     <modules>
-        <module>eladmin-common</module>
-        <module>eladmin-logging</module>
-        <module>eladmin-system</module>
-        <module>eladmin-tools</module>
-        <module>eladmin-generator</module>
+        <module>yousuadmin-common</module>
+        <module>yousuadmin-logging</module>
+        <module>yousuadmin-system</module>
+        <module>yousuadmin-tools</module>
+        <module>yousuadmin-generator</module>
     </modules>
 
-    <name>EL-ADMIN后台管理系统</name>
-    <url>http://auauz.net</url>
+    <name>IOT-ADMIN</name>
+    <url></url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -34,7 +34,7 @@
         <swagger.version>2.9.2</swagger.version>
         <fastjson.version>1.2.68</fastjson.version>
         <druid.version>1.1.22</druid.version>
-        <commons-pool2.version>2.5.0</commons-pool2.version>
+        <commons-pool2.version>2.7.0</commons-pool2.version>
         <mapstruct.version>1.3.1.Final</mapstruct.version>
     </properties>
 
@@ -82,9 +82,18 @@
             <artifactId>commons-pool2</artifactId>
             <version>${commons-pool2.version}</version>
         </dependency>
+
+        <!--guava依赖-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>10.0.1</version>
+        </dependency>
+
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
         </dependency>
 
         <!--监控sql日志-->
